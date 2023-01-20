@@ -20,7 +20,7 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter{
 	private Environment env;
 	
 	private static final String[] PUBLIC = {"/oauth/token", "/h2-console/**"};
-	private static final String[] PUBLIC_GET = {"events/**", "/cities/**"}; 
+	private static final String[] PUBLIC_GET = {"/events", "/cities"}; 
 	private static final String[] CLIENT_OR_ADMIMN = {"/events/**"};
 	
 	@Autowired
